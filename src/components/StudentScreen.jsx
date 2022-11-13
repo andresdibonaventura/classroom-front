@@ -2,13 +2,17 @@ import axios from 'axios'
 import React from 'react'
 import Task from './Task'
 import {  useState, useEffect } from "react"
+import getConfig from '../utils/getConfig'
 
 const StudentScreen = () => {
+
+  const getC = getConfig()
     const [listtasks, setListtasks] = useState()
+    console.log(getC)
     useEffect(() => {
-     
-    axios.get("https://english-classroom.onrender.com/api/v1/task/me")
-    .then(res => setListtasks(res.data))
+     const URL = "https://english-classroom.onrender.com/api/v1/task/me"
+    axios.get(URL, getConfig())
+    .then(res => console.log(res.data))
     .catch(err => console.log(err))  
     }, [])
 

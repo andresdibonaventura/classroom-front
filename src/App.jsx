@@ -6,38 +6,40 @@ import HomeScreen from './components/homeScreen'
 import { Route, Routes } from 'react-router-dom'
 import {  } from 'react-router'
 import PrivateRouter from './components/PrivateRouter'
-
-import FormLogin from './components/login/formLogin'
+import getConfig  from './utils/getConfig'
+import FormLogin from './components/login/Form'
 import StudentScreen from './components/StudentScreen'
+import LoginTeacher from './components/login/loginTeacher'
+import TeacherScreen from './components/TeacherScreen'
+import Register from './components/login/Register'
+import LoginScreen from './components/login/LoginScreen'
 
 
 function App() {
 const [classroom, setClassroom] = useState()
 const URL = "https://english-classroom.onrender.com/api/v1/"
-useEffect(() => {
-axios.get("https://english-classroom.onrender.com/api/v1/users/63cd6011-7e76-4d6d-b25b-1d6e4182ec2f")
-.then((res) => setClassroom(res.data))
-.catch((err) => console.log(err))
-
 
   
-}, [])
+
 
 console.log(classroom)
   return (
    <div>
     < Routes>
       <Route path='/' element={< HomeScreen />}/>
-      <Route path='login' element={< FormLogin />}/>
-      <Route element={<PrivateRouter />} >
+      <Route path='/register' element={<Register />}/>
+      <Route path='login' element={<LoginScreen />}/>
+      <Route path='login-teacher' element={<LoginTeacher />}/>
+      {/* <Route element={<PrivateRouter />} > */}
       <Route path='/students' element={<StudentScreen />}/>
-
-      </Route>
+      <Route path='/teacher' element={<TeacherScreen />}/>
+{/* 
+      </Route> */}
     
     </Routes>
  
    </div>
   )
-}
+    }
 
 export default App
