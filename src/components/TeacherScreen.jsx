@@ -43,11 +43,13 @@ const TeacherScreen = () => {
                   key = {user.id}
                   src= {user}
                 >
-                  <div className='tasksUser' onClick={() => nav(user.id)}>
-                  {user.id} <br />
-               
+                  <div className='tasksUser' >
+                  {user.id}  <>&nbsp;&nbsp;&nbsp;&nbsp;</>
+               <h3 onClick={() => nav(user.id)}>
                  {user.firstName} < > </>
                   {user.lastName}
+               </h3>
+                
                 
                   </div>
               
