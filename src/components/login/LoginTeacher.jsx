@@ -5,7 +5,7 @@ import StudentScreen from "../StudentScreen";
 import TeacherScreen from "../TeacherScreen";
 import Form from "./Form";
 import FormTeacher from "./FormTeacher";
-import './style/LoginScreen'
+import './style/LoginScreen.css'
 
 
 const LoginTeacher = () => {

@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router";
 import StudentScreen from "../StudentScreen";
 import Form from "./Form";
-import './style/loginScreen.css'
+import './style/LoginScreen.css'
 
 
 const LoginScreen = () => {
