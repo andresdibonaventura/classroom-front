@@ -12,7 +12,7 @@ const Form = () => {
   const navigate = useNavigate()
 
   const submit = data => {
-    const URL = 'https://english-classroom.onrender.com/api/v1/auth/login'
+    const URL = 'https://classroom-ef3j.onrender.com/api/v1/auth/login'
     axios.post(URL, data)
       .then(({data})=> {
         console.log(data)
@@ -35,22 +35,22 @@ const Form = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(submit)} className="login__form">
-      <ul className="login__test">
+    <form onSubmit={handleSubmit(submit)} className="login__form ">
+      {/* <ul className="login__test">
         <li className="flex-login">
           <b className="login-b">Email: </b>mason@gmail.com
         </li>
         <li className="flex-login">
           <b className="login-b">Password:    </b>mason1234
         </li>
-      </ul>
+      </ul> */}
       <h2 className="login__title">Enter your information</h2>
       <ul className="login__list">
         <li className="login__item">
           <label htmlFor="login-email" className="login__label">Email</label>
           <input 
             type="email"
-            className="login__input" 
+            className="loginInput" 
             id="login-email"
             {...register('email')}
           />

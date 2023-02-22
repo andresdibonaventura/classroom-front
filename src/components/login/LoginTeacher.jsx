@@ -20,7 +20,7 @@ const LoginTeacher = () => {
   }, [changedToken])
 
   return (
-    <div className="login">
+    <div>
       {
         token ?
           <TeacherScreen />

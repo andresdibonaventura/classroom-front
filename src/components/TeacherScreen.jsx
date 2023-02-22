@@ -1,70 +1,79 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useEffect } from 'react'
+import { useForm } from 'react-hook-form'
 import getConfig from '../utils/getConfig'
+import { useNavigate, useParams } from 'react-router'
 
 const TeacherScreen = () => {
-
-  const [user, setUser] = useState()
-
+  const {id} = useParams()
+  const navigate = useNavigate()
+  const [users, setUsers] = useState()
+  const {handleSubmit, reset, register} = useForm()
     useEffect(() => {
-      const URL = "https://english-classroom.onrender.com/api/v1/task/teacher"
+      const URL = "https://classroom-ef3j.onrender.com/api/v1/users/teacher"
       axios.get(URL, getConfig())
-      .then(res =>setUser(res.data))
+      .then(res =>setUsers(res.data))
       .catch(err => console.log(err))
     
     }, [])
-    console.log(user)
-    // const postTask = () => {
-    //   const URL ="https://english-classroom.onrender.com/api/v1/task/teacher"
-    //     axios.post(URL, getConfig())
-    //     .then(res => res.data)
-    //     .catch(err => console.log(err))
-    
-   
-    // }
+    // console.log(user)
+  
+
+    const nav = id => {
+      navigate(`/studentsTask/${id}`)
+    }
        
-    const defaultValuesForm = {
-        title: "",
-        description: "",
-        userId: ""
-      }
-    
-     
-    
+   const submit = (data) => {
+   const URL ="https://classroom-ef3j.onrender.com/api/v1/task/teacher"
+   axios.post(URL, data, getConfig())
+   .then(res => res.data)
+   .catch(err => console.log(err)) 
+   console.log(data)
+   }
       return (
         <div>
 
-       
-        <ul>
+
+        <ul className='col8 '>
          
             {
-              user?.users.map(user => (
+              users?.map(user => (
                 <li   
-                  key = {user.users.id}
+                  key = {user.id}
+                  src= {user}
                 >
-                {user?.users?.firstName}
+                  <div className='tasksUser' onClick={() => nav(user.id)}>
+                  {user.id} <br />
+               
+                 {user.firstName} < > </>
+                  {user.lastName}
+                
+                  </div>
+              
                 </li>
+                
+               
               ))
             }
          
         </ul>
-           {user?.users.firstName}
-           <form >
-            {/* <div>
-              <label htmlFor="title">title</label>
-              <input type="text" id='name' {...postTask('name')} />
+           {/* {user?.users.firstName} */}
+           <form  className='col4 postTask login__form'  onSubmit={handleSubmit(submit)}>
+            <div>
+              <label htmlFor="title">title</label> 
+              <input className='inputText' type="text" id='name' {...register('title')} />
             </div>
             <div>
               <label htmlFor="description">description</label>
-              <input type="text" id='genre' {...postTask('genre')} />
+              <textarea className='inputText2' type="text" id='genre' {...register('description')} />
             </div>
             <div>
               <label htmlFor="userId">user</label>
-              <input type="text" id='genre' {...postTask('genre')} />
-            </div> */}
-            <div>hola</div>
-            {/* <button onClick={postTask}>Submit</button> */}
+              <input className='inputText3' type="text" id='genre' {...register('userId')} />
+            </div>
+        
+            <button >Submit</button>
           </form>
     
        
@@ -72,8 +81,8 @@ const TeacherScreen = () => {
         
       )
     }
-    
- 
+
+
 
 
 export default TeacherScreen

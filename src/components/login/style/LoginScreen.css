@@ -10,6 +10,10 @@
     box-shadow: 0 0 20px #0005;
     padding: 20px;
     border-radius: 10px;
+    background-color: beige;
+    margin: auto;
+    color: rgb(3, 3, 73);
+    margin-top: 80px;
   }
   .login__test {
     width: 100%;
@@ -28,4 +32,8 @@
   }
   .login__item{
     margin-bottom: 10px;
+  }
+
+  .loginInput{
+    margin-left: 10px;
   }
