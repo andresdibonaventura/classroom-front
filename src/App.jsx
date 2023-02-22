@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import './App.css'
-import HomeScreen from './components/homeScreen'
+import HomeScreen from './components/HomeScreen'
 // import { BrowserRouter } from 'react-router-dom'
 import { Route, Routes } from 'react-router-dom'
 import {  } from 'react-router'
