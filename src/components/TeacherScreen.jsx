@@ -35,7 +35,7 @@ const TeacherScreen = () => {
         <div>
 
 
-        <ul className='col8 '>
+        <ul className='col8 students'>
          
             {
               users?.map(user => (

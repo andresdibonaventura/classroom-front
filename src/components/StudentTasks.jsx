@@ -25,11 +25,11 @@ const nav = id => {
    <div>
 {
   tasks?.map(task => (
-   <li  key={task.id}
+   <ul  key={task.id}
    src={task.id}
    >
-      <h2 onClick={() => nav(task.id)}>{task.title} {task.id}</h2>
-   </li>
+      <h2 className='tasksUser' onClick={() => nav(task.id)}>{task.title} </h2>
+   </ul>
   ))
 }
 

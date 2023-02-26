@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className="header">
       <h1 className="header__title">
-        <Link to='/'>Classroom</Link>
+      A+BE FAST
       </h1>
       <div onClick={clickMenuHam} className="header__menuham">
         <i className="fa-solid fa-bars"></i>

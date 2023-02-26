@@ -1,16 +1,21 @@
 
 
 .header {
+
+  height: 500px;
   background-color: rgb(2, 2, 92);
     padding: var(--padding-mobile);
     display: flex;
     justify-content: space-between;
     align-items: center;
+
  
    
   }
   .header__title {
-    color: var(--secondary-color);
+    margin-left: 20px;
+    color:#ffff;
+    font-family: fantasy;
   }
   .header__menuham{
     font-size: 1.4rem;
@@ -38,6 +43,10 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+  }
+
+  .navbar__label{
+    color: #FFFF;
   }
   .navbar__links {
     display: flex;

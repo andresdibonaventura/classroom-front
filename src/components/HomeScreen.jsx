@@ -1,5 +1,6 @@
 import React from "react";
 import { Navigate, useNavigate } from "react-router"
+import FooterScreen from "./Footer/FooterScreen";
 import Header from "./header/Header";
 
 
@@ -52,7 +53,7 @@ const plan3 = () => {
     <div className="cont">
      <img src="https://img.freepik.com/fotos-premium/joven-caucasica-que-estudia-ingles-aislada-fondo-amarillo-diciendo-noticia-secreta-frenado-caliente-mirando-lado_1187-221747.jpg?w=2000" alt="" />
         <div className="text1">
-      <h1 className="title">Nombre</h1>
+      <a><img src="../assets/img/abefastt.png" alt="logo" /></a>
       <h2 className="title-text">Aprende ingles online!</h2>
       <h2 className="title-text">Mejora tus oportunidades laborales y aprende el idioma mas relevante del mercado desde la comodidad de tu casa y con profesores experimentados</h2>
         </div>
@@ -71,7 +72,7 @@ const plan3 = () => {
         <div className="plan1" onClick={() => plan2()}>
         <h2 className="plan-title">Intermedio</h2>
         <h4 className="plan-text">
-          <li>Clases 3 veces a la semana</li>
+          <li>Clases 2 veces a la semana</li>
           <li>Tutoria toda la semana</li>
           <li>Acceso a material de apoyo</li>
         </h4>
@@ -81,7 +82,7 @@ const plan3 = () => {
         <div className="plan1">
           <h2 className="plan-title">Avanzado</h2>
           <h4 className="plan-text">
-             <li>Clases 5 veces a la semana</li>
+             <li>Clases 3 veces a la semana</li>
           <li>Tutoria toda la semana</li>
           <li>Acceso a material de apoyo</li></h4>
           <h1 className="plan-price">{price3()}$/mes</h1>
@@ -92,6 +93,7 @@ const plan3 = () => {
       
       
       </div>
+
 
      
     </div>

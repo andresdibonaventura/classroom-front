@@ -45,16 +45,16 @@ const price = () => {
     <h2 className="login__title">Enter your information</h2>
     <ul className="login__list">
       <li className="login__item">
-        <label htmlFor="firstName" className="login__label">firstName</label>
+        <label htmlFor="firstName" className="login__label">Name</label>
         <input 
           type="text"
-          className="loginInput" 
+          className="login__input" 
           id="firstName"
           {...register('firstName')}
         />
       </li>
       <li className="login__item">
-        <label htmlFor="lastName" className="login__label">lastName</label>
+        <label htmlFor="lastName" className="login__label">Last Name</label>
         <input 
           type="text" 
           className="login__input" 
@@ -66,7 +66,7 @@ const price = () => {
         <label htmlFor="gender" className="login__label">Gender</label>
         <input 
           type="text"
-          className="loginInput" 
+          className="login__input" 
           id="gender"
           {...register('gender')}
         />
@@ -81,16 +81,16 @@ const price = () => {
         />
       </li>
       <li className="login__item">
-        <label htmlFor="password" className="login__label">password</label>
+        <label htmlFor="password" className="login__label">Password</label>
         <input 
           type="password"
-          className="loginInput" 
+          className="login__input" 
           id="password"
           {...register('password')}
         />
       </li>
       <li className="login__item">
-        <label htmlFor="country" className="login__label">country</label>
+        <label htmlFor="country" className="login__label">Country</label>
         <input 
           type="text" 
           className="login__input" 
@@ -99,7 +99,7 @@ const price = () => {
         />
       </li>
 
-      <h3> {price()}$</h3>
+
     </ul>
     
     <button className='plan-button'>Confirmar</button>

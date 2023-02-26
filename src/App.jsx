@@ -20,6 +20,7 @@ import RegisterThird from './components/RegisterThird'
 import StudentTasks from './components/StudentTasks'
 import Califications from './components/Califications'
 import RegisterTeacher from './components/RegisterTeacher'
+import FooterScreen from './components/Footer/FooterScreen'
 
 
 function App() {
@@ -54,7 +55,8 @@ console.log(classroom)
     </Routes>
  
     </main>
-   
+  
+    <FooterScreen />
    </div>
   )
     }

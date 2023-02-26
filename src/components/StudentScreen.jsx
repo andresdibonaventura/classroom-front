@@ -5,6 +5,7 @@ import {  useState, useEffect } from "react"
 import getConfig from '../utils/getConfig'
 import { useNavigate } from 'react-router'
 import { useParams } from 'react-router'
+import ReturnButton from './ReturnButton'
 
 const StudentScreen = () => {
   const {id} = useParams()
@@ -30,6 +31,7 @@ const StudentScreen = () => {
     console.log(id)
   return (
     <div className='containerTask'>
+      <ReturnButton />
       <div className='col9 tasks'>
       {
           tasks.map(task => (

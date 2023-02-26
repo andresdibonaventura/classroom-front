@@ -50,7 +50,7 @@ const Form = () => {
           <label htmlFor="login-email" className="login__label">Email</label>
           <input 
             type="email"
-            className="loginInput" 
+            className="login__input" 
             id="login-email"
             {...register('email')}
           />

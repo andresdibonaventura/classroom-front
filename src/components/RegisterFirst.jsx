@@ -19,16 +19,15 @@ const price = () => {
     return 70
   }
 }
-const nav = () => {
-  navigate('/success')
+ const nav = () => {
+
 }
   const navigate = useNavigate()
     const submit  = async data => {
       try {
         const res = await axios.post('https://classroom-ef3j.onrender.com/api/v1/users', data);
         console.log(res)
-        // navigate('/login')
-      { ()=>nav()}
+        nav()
       } catch (error) {
       if(error instanceof AxiosError){
         console.log(error.message)
@@ -49,16 +48,16 @@ const nav = () => {
     <h2 className="login__title">Enter your information</h2>
     <ul className="login__list">
       <li className="login__item">
-        <label htmlFor="firstName" className="login__label">firstName</label>
+        <label htmlFor="firstName" className="login__label">Name</label>
         <input 
           type="text"
-          className="loginInput" 
+          className="login__input" 
           id="firstName"
           {...register('firstName')}
         />
       </li>
       <li className="login__item">
-        <label htmlFor="lastName" className="login__label">lastName</label>
+        <label htmlFor="lastName" className="login__label">Last Name</label>
         <input 
           type="text" 
           className="login__input" 
@@ -70,7 +69,7 @@ const nav = () => {
         <label htmlFor="gender" className="login__label">Gender</label>
         <input 
           type="text"
-          className="loginInput" 
+          className="login__input" 
           id="gender"
           {...register('gender')}
         />
@@ -85,16 +84,16 @@ const nav = () => {
         />
       </li>
       <li className="login__item">
-        <label htmlFor="password" className="login__label">password</label>
+        <label htmlFor="password" className="login__label">Password</label>
         <input 
           type="password"
-          className="loginInput" 
+          className="login__input" 
           id="password"
           {...register('password')}
         />
       </li>
       <li className="login__item">
-        <label htmlFor="country" className="login__label">country</label>
+        <label htmlFor="country" className="login__label">Country</label>
         <input 
           type="text" 
           className="login__input" 
@@ -106,9 +105,15 @@ const nav = () => {
       <h3> {price()}$</h3>
     </ul>
     
-    <button className='plan-button'>Confirmar</button>
+    
+    <button className='plan-button'>
+    <a rel="stylesheet" href="https://buy.stripe.com/eVa17He4zbI45e86oo">Pagar</a> 
+      Confirmar</button>
+  
   </form>
   )
 }
 
 export default RegisterFirst
+
+//victorlffffffffff@gmailzzz.com

@@ -39,11 +39,11 @@ const ResponseTask = ({tasks}) => {
     <form onSubmit={handleSubmit(submit)}>
       <ul> <textarea type="text"     {...register('response') }
    /> <br />
-   {
+   {/* {
     <div>
         Response submited!!!'
     </div>
-   }
+   } */}
  <button>responder</button> <br />
 
         {tasks.response}
