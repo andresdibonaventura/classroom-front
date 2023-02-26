@@ -43,4 +43,8 @@
     .footer__text{
       margin-bottom: 30px;
     }
+    .redes__items{
+        position: absolute;
+        left: 500px;
+    }
   }

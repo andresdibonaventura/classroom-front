@@ -16,6 +16,7 @@
     margin-left: 20px;
     color:#ffff;
     font-family: fantasy;
+    font-size: 20px;
   }
   .header__menuham{
     font-size: 1.4rem;
@@ -110,5 +111,6 @@
     }
     .header__title{
       font-size: 10px;
+      font-family: 'Courier New', Courier, monospace;
     }
   }
