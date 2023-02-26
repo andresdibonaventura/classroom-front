@@ -120,6 +120,7 @@ img {
   gap: 150px;
   min-width: 700px;
   flex-wrap: wrap;
+  overflow: auto;
  
 
 }
@@ -400,6 +401,7 @@ margin: auto;
   .containerTask{
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
     
   }
   .taskscard{

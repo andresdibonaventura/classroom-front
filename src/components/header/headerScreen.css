@@ -2,7 +2,7 @@
 
 .header {
 
-  height: 500px;
+
   background-color: rgb(2, 2, 92);
     padding: var(--padding-mobile);
     display: flex;
@@ -107,5 +107,8 @@
     }
     .navbar__links{
       padding: 0 30px;
+    }
+    .header__title{
+      font-size: 10px;
     }
   }
