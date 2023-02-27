@@ -2,6 +2,7 @@ import axios, { AxiosError } from 'axios'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router'
+import ReturnButton from './ReturnButton'
 
 const RegisterSecond = () => {
 
@@ -41,7 +42,7 @@ const price = () => {
   return (
     
     <form onSubmit={handleSubmit(submit)} className="login__form ">
-    
+    <ReturnButton />
     <h2 className="login__title">Enter your information</h2>
     <ul className="login__list">
       <li className="login__item">

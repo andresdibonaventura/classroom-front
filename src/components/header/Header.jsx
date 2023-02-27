@@ -5,7 +5,9 @@ import './headerScreen.css'
 const Header = () => {
 
   const navbar = useRef()
-
+  const submit = data => {
+    navigate("/login")
+  }
   const clickMenuHam = () => {
     navbar.current.classList.toggle('navbar-open')
   }
@@ -36,12 +38,12 @@ const Header = () => {
               <p className="navbar__label">Quienes somos</p>
             </NavLink>
           </li>
-          <li className="navbar__items item-hide">
+          <li className="navbar__items ">
             <NavLink 
-                 
+                 to={'/login'}
                 className={({isActive}) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}>
-              <i className="fa-solid fa-cart-shopping"></i>
-              <p className="navbar__label">xxx</p>
+             
+              <p className="navbar__label">Login</p>
             </NavLink>
           </li>
         </ul>

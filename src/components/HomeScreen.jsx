@@ -7,9 +7,7 @@ import fondo from "../assets/img/fondo.jpg"
 
 const HomeScreen = () => {
   const navigate = useNavigate()
-const submit = data => {
-  navigate("/login")
-}
+
 
 const locale = new Intl.Locale("en-Latn-US");
 console.log(locale.region); // Prints "US"
@@ -90,7 +88,7 @@ const plan3 = () => {
           <button className="plan-button" onClick={() => plan3()}>Inscribete!</button>
         </div>
           </div>
-        <button className="login" onClick={submit}>Login</button>
+    
       
       
       </div>

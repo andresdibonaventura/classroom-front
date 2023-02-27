@@ -257,6 +257,7 @@ img {
 .plan-title{
   text-align: center;
   margin-top: 30px;
+  color: black;
 
 }
 
@@ -265,11 +266,13 @@ img {
   margin-top: 30px;
   margin-left: 30px;
   margin-right: 30px;
+  color: black;
 }
 
 .plan-price{
   text-align: center;
   margin-top: 40px;
+  color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
