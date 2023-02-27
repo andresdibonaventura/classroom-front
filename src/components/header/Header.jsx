@@ -22,15 +22,15 @@ const Header = () => {
         <ul className="navbar__list">
           <li className="navbar__items">
             <NavLink 
-                to='/location' 
+                to='/levels' 
                 className={({isActive}) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}>
               {/* <i className="fa-solid fa-user"></i> */}
-              <p className="navbar__label">Ubicacion</p>
+              <p className="navbar__label">Niveles</p>
             </NavLink>
           </li>
           <li className="navbar__items">
             <NavLink 
-                to='/purchases' 
+                to='/nosotros' 
                 className={({isActive}) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}>
               {/* <i className="fa-solid fa-store"></i> */}
               <p className="navbar__label">Quienes somos</p>

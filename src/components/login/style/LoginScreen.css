@@ -5,7 +5,7 @@
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .login__form {
+  /* .login__form {
     width: max-content;
     box-shadow: 0 0 20px #0005;
     padding: 20px;
@@ -14,7 +14,11 @@
     margin: auto;
     color: rgb(3, 3, 73);
     margin-top: 80px;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } */
   .login__test {
     width: 100%;
     padding: 12px 8px;
@@ -32,6 +36,9 @@
   }
   .login__item{
     margin-bottom: 10px;
+    display: flex;
+    position: relative;
+
   }
 
   .loginInput{

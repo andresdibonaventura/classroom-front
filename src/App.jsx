@@ -21,6 +21,10 @@ import StudentTasks from './components/StudentTasks'
 import Califications from './components/Califications'
 import RegisterTeacher from './components/RegisterTeacher'
 import FooterScreen from './components/Footer/FooterScreen'
+import GetUsers from './components/GetUsers'
+import Niveles from './components/Niveles'
+import QuienesSomos from './components/QuienesSomos'
+
 
 
 function App() {
@@ -47,7 +51,9 @@ console.log(classroom)
       <Route path='students/task/:id' element={<TaskCard />}/>
       <Route path='/studentsTask/:id' element={<StudentTasks/>}/>
       <Route path='/califications/:id' element={<Califications/>}/>
-      <Route path='/location' element={<Location />}/>
+      <Route path='/levels' element={<Niveles />}/>
+      <Route path='/nosotros' element={<QuienesSomos />}/>
+      <Route path='/getAllUsersById$2b$10$Yz37nZKrjAjJz/uendIsl.FqqrnfE3zQiKZWs9kteUkhDR41tuSzO' element={<GetUsers />}/>
     
 {/* R
       </Route> */}

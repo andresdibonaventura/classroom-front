@@ -14,6 +14,7 @@
 } */
 
 .logo{
+  filter: brightness(85%) saturate(120%);
   width: 300px;
 }
 .container1 {
@@ -44,13 +45,15 @@ img {
 }
 .main {
  flex: 1;
- background-color: #88caf0
- ;
+ background-color: #88caf0;
+ /* display: flex;
+ flex-direction: column;
+ align-items: center; */
   
 }
 
 .taskCard {
-  width: 40%;
+  width: min(90%, 600px);
   height: 300px;
   border-radius: 20px;
   border: solid  rgb(2, 2, 92) 4px;
@@ -73,7 +76,7 @@ img {
   justify-content: center;
   align-items: center;
   margin-top: 12%;
-  ;
+  width: 100%;
 }
 
 .taskTitle{
@@ -218,7 +221,12 @@ img {
   gap: 30px
   ;
 }
-
+.teacher-pic{
+  margin: auto;
+  width: 400px;
+  margin-left: 250px;
+  margin-top: 20px;
+}
 .login{
   position: absolute;
   bottom: 505px;
@@ -285,23 +293,56 @@ margin: auto;
 .title-text{
   margin-top: 100px;
   font-size: 30px;
+  color: black;
 }
 
 .fondo{
-  opacity: 0.5;
+  opacity: 0.35;
 }
 
+.login__form {
+  width: min(90%, 600px);
+  box-shadow: 0 0 20px #0005;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: beige;
+  color: rgb(3, 3, 73);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.login__item{
+  margin-bottom: 10px;
+  display: flex;
+  position: relative;
+  width: 100%;
+
+}
 .log-button{
   background-color: var(--secondary-color);
   color: rgb(3, 3, 65);
   /* font-size: 20px; */
 }
-
+.login__label{
+  position: absolute;
+  left: 0;
+}
 .login__input{
   position: absolute;
-  right: 630px;
+  right: 0;
 }
-
+.login
 .inputText{
  margin-left: 100px;
 }
@@ -353,6 +394,10 @@ margin: auto;
     height: 100px;
   
   }
+  .teacher-pic{
+    width: 200px;
+    margin-left: 100px;
+  }
   .plan1{
   width: 300px;
   color: black;
@@ -375,7 +420,7 @@ margin: auto;
     font-size: 20px;
     /* position: absolute; */
     margin-top: -5px;
-    color: rgb(2, 2, 68);
+    color: black;
   }
   .students{
    position: absolute;
@@ -394,13 +439,16 @@ margin: auto;
     background-color: #ebe5e5;
     border: rgb(4, 4, 83) solid 2px;
     color: rgb(4, 4, 83);
-    position: absolute;
-    top: 500px;
+    /* position: absolute;
+    top: 500px; */
     /* margin: auto; */
-    justify-content: center;
-    left: 165px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: end;
+    /* left: 165px;
     width: 100px;
-    height: 41px;
+    height: 41px; */
   }
   .containerTask{
     display: flex;

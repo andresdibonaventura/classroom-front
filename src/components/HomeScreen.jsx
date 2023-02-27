@@ -3,6 +3,7 @@ import { Navigate, useNavigate } from "react-router"
 import FooterScreen from "./Footer/FooterScreen";
 import Header from "./header/Header";
 import logo from "../assets/img/abefastt.png"
+import fondo from "../assets/img/fondo.jpg"
 
 const HomeScreen = () => {
   const navigate = useNavigate()
@@ -51,7 +52,7 @@ const plan3 = () => {
   return (
   
     <div className="cont">
-     <img className="fondo" src="https://img.freepik.com/fotos-premium/joven-caucasica-que-estudia-ingles-aislada-fondo-amarillo-diciendo-noticia-secreta-frenado-caliente-mirando-lado_1187-221747.jpg?w=2000" alt="" />
+     <img className="fondo" src={fondo} alt="" />
         <div className="text1">
       <a><img className="logo" src={logo} alt="logo" /></a>
       <h2 className="title-text">Aprende ingles online!</h2>
