@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router"
 import FooterScreen from "./Footer/FooterScreen";
 import Header from "./header/Header";
@@ -7,36 +7,70 @@ import fondo from "../assets/img/fondo.jpg"
 
 const HomeScreen = () => {
   const navigate = useNavigate()
+  const [price, setPrice] = useState(35);
+  const [price2, setPrice2] = useState(55);
+  const [price3, setPrice3] = useState(70);
+
+  useEffect(() => {
+    const region = navigator.language;
+
+    if (region === 'es-VE') {
+      setPrice(35);
+    } else {
+      setPrice(55);
+    }
+  }, []);
+
+  
+  useEffect(() => {
+    const region = navigator.language;
+
+    if (region === 'es-VE') {
+      setPrice2(55);
+    } else {
+      setPrice2(70);
+    }
+  }, []);
 
 
-const locale = new Intl.Locale("en-Latn-US");
-console.log(locale.region); // Prints "US"
+  
+  useEffect(() => {
+    const region = navigator.language;
 
-const price = () => {
-  if (locale.region === "US"){
-    return 50
-  } else {
-    return 30
-   }
-}
-
-
-const price2 = () => {
-  if (locale.region === "US"){
-    return 70
-  } else {
-    return 50
-  }
-}
+    if (region === 'es-VE') {
+      setPrice3(70);
+    } else {
+      setPrice3(100);
+    }
+  }, []);
 
 
-const price3 = () => {
-  if (locale.region === "US"){
-    return 100
-  } else {
-    return 70
-  }
-}
+
+// const price = () => {
+//   if (locale.region === "US"){
+//     return 50
+//   } else {
+//     return 30
+//    }
+// }
+
+
+// const price2 = () => {
+//   if (locale.region === "US"){
+//     return 70
+//   } else {
+//     return 50
+//   }
+// }
+
+
+// const price3 = () => {
+//   if (locale.region === "US"){
+//     return 100
+//   } else {
+//     return 70
+//   }
+// }
 
 const plan1 = () => {
   navigate("/register-plan-1")
@@ -65,7 +99,7 @@ const plan3 = () => {
           <li>Clases 1 vez a la semana</li>
           <li>Tutoria toda la semana</li>
           <li>Acceso a material de apoyo</li></h4>
-          <h1 className="plan-price">{price()}$/mes</h1>
+          <h1 className="plan-price">{price}$/mes</h1>
           <button  className="plan-button" onClick={() => plan1()}>Inscribete!</button>
         </div>
         <div className="plan1" onClick={() => plan2()}>
@@ -75,7 +109,7 @@ const plan3 = () => {
           <li>Tutoria toda la semana</li>
           <li>Acceso a material de apoyo</li>
         </h4>
-        <h1 className="plan-price">{price2()}$/mes</h1>
+        <h1 className="plan-price">{price2}$/mes</h1>
         <button className="plan-button" onClick={() => plan2()}>Inscribete!</button>
         </div>
         <div className="plan1">
@@ -84,7 +118,7 @@ const plan3 = () => {
              <li>Clases 3 veces a la semana</li>
           <li>Tutoria toda la semana</li>
           <li>Acceso a material de apoyo</li></h4>
-          <h1 className="plan-price">{price3()}$/mes</h1>
+          <h1 className="plan-price">{price3}$/mes</h1>
           <button className="plan-button" onClick={() => plan3()}>Inscribete!</button>
         </div>
           </div>
