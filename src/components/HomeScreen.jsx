@@ -7,42 +7,45 @@ import fondo from "../assets/img/fondo.jpg"
 
 const HomeScreen = () => {
   const navigate = useNavigate()
-  const [price, setPrice] = useState(35);
-  const [price2, setPrice2] = useState(55);
-  const [price3, setPrice3] = useState(70);
+  const [price, setPrice] = useState();
 
   useEffect(() => {
-    const region = navigator.language;
+    const apiUrl = 'https://ipapi.co/json/';
 
-    if (region === 'es-VE') {
-      setPrice(35);
-    } else {
-      setPrice(55);
-    }
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        const countryCode = data.country_code;
+        if (countryCode === 'VE') {
+          setPrice(35);
+        } else {
+          setPrice(55);
+        }
+      });
   }, []);
 
   
-  useEffect(() => {
-    const region = navigator.language;
+  // useEffect(() => {
+  //   const region = navigator.language;
 
-    if (region === 'es-VE') {
-      setPrice2(55);
-    } else {
-      setPrice2(70);
-    }
-  }, []);
+  //   if (region === 'es-VE') {
+  //     setPrice2(55);
+  //   } else {
+  //     setPrice2(70);
+  //   }
+  // }, []);
 
 
   
-  useEffect(() => {
-    const region = navigator.language;
+  // useEffect(() => {
+  //   const region = navigator.language;
 
-    if (region === 'es-VE') {
-      setPrice3(70);
-    } else {
-      setPrice3(100);
-    }
-  }, []);
+  //   if (region === 'es-VE') {
+  //     setPrice3(70);
+  //   } else {
+  //     setPrice3(100);
+  //   }
+  // }, []);
 
 
 
@@ -109,7 +112,7 @@ const plan3 = () => {
           <li>Tutoria toda la semana</li>
           <li>Acceso a material de apoyo</li>
         </h4>
-        <h1 className="plan-price">{price2}$/mes</h1>
+        <h1 className="plan-price">$/mes</h1>
         <button className="plan-button" onClick={() => plan2()}>Inscribete!</button>
         </div>
         <div className="plan1">
@@ -118,7 +121,7 @@ const plan3 = () => {
              <li>Clases 3 veces a la semana</li>
           <li>Tutoria toda la semana</li>
           <li>Acceso a material de apoyo</li></h4>
-          <h1 className="plan-price">{price3}$/mes</h1>
+          <h1 className="plan-price">$/mes</h1>
           <button className="plan-button" onClick={() => plan3()}>Inscribete!</button>
         </div>
           </div>
