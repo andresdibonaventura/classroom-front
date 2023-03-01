@@ -25,8 +25,9 @@
   .navbar__items{
     display: inline-block;
     color: azure;
-    margin-right: 13px;
-    font-family: 10px;
+    margin-right: 8px;
+    
+    font-size: 8px;
     
   }
   .navbar__label{
@@ -84,6 +85,7 @@
       align-items: center;
       display: inline-block;
       margin-left: 50px;
+      font-size: 20px;
     }
     .navbar__links{
       padding: 0 30px;

@@ -331,6 +331,7 @@ margin: auto;
 }
 
 .ola h3{
+  color: black;
   margin-left: 10px;
   margin-top: 10px;
   display: list-item
@@ -344,6 +345,8 @@ margin: auto;
 }
 
 .login__form {
+  margin: auto;
+  margin-bottom: 15px;
   width: min(90%, 600px);
   box-shadow: 0 0 20px #0005;
   padding: 20px;
@@ -431,7 +434,11 @@ margin: auto;
   .text1{
     margin-top: -10em;
   }
-
+  .login__form{
+    
+    margin: auto;
+    margin-top: 30px;
+  }
   .text1 a img {
     width: 100px;
     height: 100px;
