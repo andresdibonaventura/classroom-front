@@ -24,6 +24,9 @@ import FooterScreen from './components/Footer/FooterScreen'
 import GetUsers from './components/GetUsers'
 import Niveles from './components/Niveles'
 import QuienesSomos from './components/QuienesSomos'
+import RegisterFirstVEN from './components/VENRegister1'
+import RegisterSecondVEN from './components/VENRegister2'
+import RegisterThirdVEN from './components/VENRegister3'
 
 
 
@@ -39,8 +42,11 @@ console.log(classroom)
     < Routes>
       <Route path='/' element={< HomeScreen />}/>
       <Route path='/register-plan-1' element={<RegisterFirst />}/>
+      <Route path='/register-plan-1-V' element={<RegisterFirstVEN />} />
       <Route path='/register-plan-2' element={<RegisterSecond />}/>
+      <Route path='/register-plan-2-V' element={<RegisterSecondVEN />} />
       <Route path='/register-plan-3' element={<RegisterThird />}/>
+      <Route path='/register-plan-3-V' element={<RegisterThirdVEN />} />
       <Route path='login' element={<LoginScreen />}/>
       <Route path='login-teacher/$2b$10$Yz37nZKrjAjJz/uendIsl.FqqrnfE3zQiKZWs9kteUkhDR41tuSzO' element={<LoginTeacher />}/>
       {/* <Route element={<PrivateRouter />} > */}

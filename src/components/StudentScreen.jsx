@@ -53,7 +53,7 @@ const StudentScreen = () => {
           Notion
          </a> <br />
          <a rel="stylesheet" href="https://zoom.us/">Zoom class</a> <br />
-         <a rel="stylesheet" href="https://slack.com/">Slack</a> 
+         <a rel="stylesheet" href="https://discord.gg/feKCQfaz">Discord</a> 
           
         </ul>
     </div>

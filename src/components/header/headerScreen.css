@@ -1,22 +1,18 @@
-
-
 .header {
-
-
-  background-color: rgb(2, 2, 92);
+    background-color: rgb(2, 2, 92);
     padding: var(--padding-mobile);
     display: flex;
     justify-content: space-between;
     align-items: center;
 
- 
-   
+
   }
   .header__title {
     margin-left: 20px;
     color:#ffff;
     font-family: fantasy;
     font-size: 20px;
+    visibility: hidden;
   }
   .header__menuham{
     font-size: 1.4rem;
@@ -24,32 +20,17 @@
     z-index: 2;
     cursor: pointer;
   }
-  .navbar{
-    width: min(100%, 300px);
-    position: fixed;
-    background-color: rgb(241, 241, 247);
-    opacity: 10;
-    color: rgb(6, 6, 71);
-    height: 100vh;
-    right: 0;
-    top: 0;
-    padding-top: 80px;
-    box-shadow: 0 0 20px 0 #0009;
-    transition: transform 600ms ease;
-    transform: translateX(105%);
+  
+  
+  .navbar__items{
+    display: inline-block;
+    color: azure;
+    margin-right: 13px;
+    font-family: 10px;
+    
   }
-  .navbar-open {
-    transition: transform 600ms ease;
-    transform: translateX(0);
-  }
-  .navbar__list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
   .navbar__label{
-    color: rgb(7, 7, 65);
+    color: #ffff;
   }
   .navbar__links {
     display: flex;
@@ -77,13 +58,7 @@
       border-bottom: 1px solid var(--border-color);
       height: 100px;
     }
-    .header__menuham {
-      display: none;
-    }
-    .navbar-open {
-      transform: translateX(0);
-      transition-duration: 0ms;
-    }
+  
     .navbar {
       transform: translateX(0);
       transition-duration: 0ms;
@@ -104,9 +79,11 @@
       border-left: 1px solid var(--border-color);
       border-right: 1px solid var(--border-color);
       padding: 0;
-      height: 100px;
+      height: 30px;
       display: flex;
       align-items: center;
+      display: inline-block;
+      margin-left: 50px;
     }
     .navbar__links{
       padding: 0 30px;
@@ -114,8 +91,15 @@
     .header__title{
       font-size: 60px;
       font-family: 'Courier New', Courier, monospace;
+      visibility: visible;
     }
     .navbar__label{
       color: #ffff;
     }
   }
+
+@media Screen and (max-width: 500px){
+  .navbar__items{
+  display: inline-block;
+  }
+}

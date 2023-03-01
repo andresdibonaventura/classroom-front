@@ -103,7 +103,7 @@ const price = () => {
       
     </ul>
     
-    <button className='plan-button'> <a rel="stylesheet" href="https://buy.stripe.com/eVa2bL5y34fCbCw9AB">Pagar</a> 
+    <button className='plan-button'> <a rel="stylesheet" href="https://buy.stripe.com/6oEeYxf8DdQccGA28e">Pagar</a> 
     </button>
   </form>
   )

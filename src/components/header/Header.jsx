@@ -5,9 +5,9 @@ import './headerScreen.css'
 const Header = () => {
 
   const navbar = useRef()
-  const submit = data => {
-    navigate("/login")
-  }
+const submit = data => {
+  navigate("/login")
+}
   const clickMenuHam = () => {
     navbar.current.classList.toggle('navbar-open')
   }
@@ -17,15 +17,23 @@ const Header = () => {
       <h1 className="header__title">
       A+BE FAST
       </h1>
-      <div onClick={clickMenuHam} className="header__menuham">
-        <i className="fa-solid fa-bars"></i>
+      <div >
       </div>
-      <nav ref={navbar} className="navbar">
-        <ul className="navbar__list">
+      <nav  className="navbar">
+        <ul>
+        <li className="navbar__items item-hide">
+            <NavLink 
+                to='prices' 
+              >
+              {/* <i className="fa-solid fa-user"></i> */}
+              <a href="#prices"></a>
+              <p className="navbar__label" >Precios</p>
+            </NavLink>
+          </li>
           <li className="navbar__items">
             <NavLink 
                 to='/levels' 
-                className={({isActive}) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}>
+              >
               {/* <i className="fa-solid fa-user"></i> */}
               <p className="navbar__label">Niveles</p>
             </NavLink>
@@ -33,16 +41,16 @@ const Header = () => {
           <li className="navbar__items">
             <NavLink 
                 to='/nosotros' 
-                className={({isActive}) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}>
+           >
               {/* <i className="fa-solid fa-store"></i> */}
-              <p className="navbar__label">Quienes somos</p>
+              <p className="navbar__label">Nosotros</p>
             </NavLink>
           </li>
-          <li className="navbar__items ">
+          <li className="navbar__items">
             <NavLink 
-                 to={'/login'}
-                className={({isActive}) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}>
-             
+                 to='/login'
+              >
+              {/* <i className="fa-solid fa-cart-shopping"></i> */}
               <p className="navbar__label">Login</p>
             </NavLink>
           </li>
