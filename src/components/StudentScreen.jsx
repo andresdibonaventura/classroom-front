@@ -49,10 +49,10 @@ const StudentScreen = () => {
         <ul className=' links col3'>
          <h2 className='titleLinks'>Classroom Links 
           </h2> 
-         <a rel="stylesheet" href="https://www.notion.so/login" >
+         {/* <a rel="stylesheet" href="https://www.notion.so/login" >
           Notion
          </a> <br />
-         <a rel="stylesheet" href="https://zoom.us/">Zoom class</a> <br />
+         <a rel="stylesheet" href="https://zoom.us/">Zoom class</a> <br /> */}
          <a rel="stylesheet" href="https://discord.gg/feKCQfaz">Discord</a> 
           
         </ul>
