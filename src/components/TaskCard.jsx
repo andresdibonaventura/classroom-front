@@ -23,7 +23,7 @@ const TaskCard = () => {
       <div className='taskCard'>
       <div className='taskTitle'>  {tasks.title} <br /> </div>
        <hr className='hr' />
-       <h3> {tasks.description} <br />
+       <h3 className='taskTitle'> {tasks.description} <br />
         </h3> 
       <h4> 
         </h4>  

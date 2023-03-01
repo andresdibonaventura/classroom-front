@@ -475,6 +475,9 @@ margin: auto;
     margin-top: -5px;
     color: black;
   }
+  .taskTitle{
+    color: black;
+  }
   .students{
    position: absolute;
    top: 300px;
@@ -544,6 +547,7 @@ margin: auto;
     left: 250px;
   }
   .titletasks{
+    color: black;
     padding: 40px;
     font-family: Garamond;
     font-size: 12px;
