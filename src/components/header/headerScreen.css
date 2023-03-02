@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'MiFuente';
+  src: url('./assets/img/Rubik_Mono_One.zip');
+}
+
 .header {
-    background-color: rgb(2, 2, 92);
+    background-color: rgb(4, 4, 51);
     padding: var(--padding-mobile);
     display: flex;
     justify-content: space-between;
@@ -10,7 +15,7 @@
   .header__title {
     margin-left: 20px;
     color:#ffff;
-    font-family: fantasy;
+   
     font-size: 20px;
     visibility: hidden;
   }
@@ -27,7 +32,7 @@
     color: azure;
     margin-right: 8px;
     
-    font-size: 8px;
+    font-size: 12px;
     
   }
   .navbar__label{
@@ -96,7 +101,7 @@
     }
     .header__title{
       font-size: 60px;
-      font-family: 'Courier New', Courier, monospace;
+      font-family: Georgia, 'Times New Roman', Times, serif;
       visibility: visible;
     }
     .navbar__label{

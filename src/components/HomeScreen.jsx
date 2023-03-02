@@ -102,8 +102,9 @@ const plan3 = (countryCode) => {
      <img className="fondo" src={fondo} alt="" />
         <div className="text1">
       <a><img className="logo" src={logo} alt="logo" /></a>
-      <h2 className="title-text">Aprende inglés online!</h2>
-      <h2 className="title-text">Mejora tus oportunidades laborales y aprende el idioma más relevante del mercado desde la comodidad de tu casa y con profesores experimentados</h2>
+      <h2 className="title-text">Mejora tus oportunidades laborales y aprende el idioma
+       más relevante del mercado desde la comodidad de tu casa y con profesores experimentados</h2>
+       <h2 className="title-text-2" >Clases personalizadas con disponibilidad de 6 días a la semana! </h2>
         </div>
       
       <div >

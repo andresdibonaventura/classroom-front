@@ -21,15 +21,7 @@ const submit = data => {
       </div>
       <nav  className="navbar">
         <ul>
-        <li className="navbar__items hide">
-            <NavLink 
-                to='/' 
-              >
-              {/* <i className="fa-solid fa-user"></i> */}
-              
-              <p className="navbar__label" >Home</p>
-            </NavLink>
-          </li>
+       
         <li className="navbar__items item-hide">
             <NavLink 
                 to='prices' 
@@ -37,6 +29,15 @@ const submit = data => {
               {/* <i className="fa-solid fa-user"></i> */}
               <a href="#prices"></a>
               <p className="navbar__label" >Precios</p>
+            </NavLink>
+          </li>
+          <li className="navbar__items hide">
+            <NavLink 
+                to='/' 
+              >
+              {/* <i className="fa-solid fa-user"></i> */}
+              
+              <p className="navbar__label" >Home</p>
             </NavLink>
           </li>
           <li className="navbar__items">
