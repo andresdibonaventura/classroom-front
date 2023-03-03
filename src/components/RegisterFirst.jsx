@@ -51,6 +51,7 @@ const price = () => {
       <li className="login__item">
         <label htmlFor="firstName" className="login__label">Name</label>
         <input 
+        placeholder='Obligatorio'
           type="text"
           className="login__input" 
           id="firstName"
@@ -60,6 +61,7 @@ const price = () => {
       <li className="login__item">
         <label htmlFor="lastName" className="login__label">Last Name</label>
         <input 
+        placeholder='Obligatorio'
           type="text" 
           className="login__input" 
           id="lastName"
@@ -69,6 +71,7 @@ const price = () => {
       <li className="login__item">
         <label htmlFor="gender" className="login__label">Gender</label>
         <input 
+        placeholder='Obligatorio'
           type="text"
           className="login__input" 
           id="gender"
@@ -78,6 +81,7 @@ const price = () => {
       <li className="login__item">
         <label htmlFor="email" className="login__label">Email</label>
         <input 
+        placeholder='Obligatorio'
           type="email" 
           className="login__input" 
           id="email"
@@ -85,8 +89,9 @@ const price = () => {
         />
       </li>
       <li className="login__item">
-        <label htmlFor="password" className="login__label">Password</label>
+        <label  htmlFor="password" className="login__label">Password</label>
         <input 
+        placeholder='Obligatorio'
           type="password"
           className="login__input" 
           id="password"
@@ -96,6 +101,7 @@ const price = () => {
       <li className="login__item">
         <label htmlFor="country" className="login__label">Country</label>
         <input 
+        placeholder='Obligatorio'
           type="text" 
           className="login__input" 
           id="country"
@@ -108,7 +114,8 @@ const price = () => {
     
     
     <button className='plan-button'>
-    <a rel="stylesheet" href="https://buy.stripe.com/9AQ4jTaSn6nK7mg8wB">Pagar</a> 
+    <a rel="stylesheet" //</button>href="https://buy.stripe.com/9AQ4jTaSn6nK7mg8wB"
+    >Pagar</a> 
       </button>
   
   </form>
