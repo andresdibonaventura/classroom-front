@@ -113,9 +113,8 @@ const price = () => {
     </ul>
     
     
-    <button className='plan-button'>
-    <a rel="stylesheet" href="https://buy.stripe.com/9AQ4jTaSn6nK7mg8wB"
-    >Pagar</a>!
+    <button className='plan-button' href="https://buy.stripe.com/9AQ4jTaSn6nK7mg8wB">
+    Pagar
       </button>
   
   </form>
