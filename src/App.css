@@ -403,6 +403,9 @@ margin: auto;
   width: 100%;
 
 }
+.redirect{
+  color: transparent;
+}
 .second-button{
   width: 140px;
   /* background-color: transparent;

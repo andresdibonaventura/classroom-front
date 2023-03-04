@@ -115,7 +115,7 @@ const price = () => {
 
       
     </ul>
-    <a ref={redirectLink} href="https://buy.stripe.com/9AQ4jTaSn6nK7mg8wB">Redireccionar</a>
+    <a className='redirect' ref={redirectLink} href="https://buy.stripe.com/9AQ4jTaSn6nK7mg8wB">Redireccionar</a>
       <button onClick={handleButtonClick} className='plan-button' type="submit">Enviar formulario</button>
     
   </form>
