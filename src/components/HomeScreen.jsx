@@ -134,7 +134,7 @@ const plan3 = (countryCode) => {
         </div>
 
 
-        <div className="plan1" onClick={() => plan2()}>
+        <div className="plan1" onClick={() => plan3()}>
           <h2 className="plan-title">Premium</h2>
           <h4 className="plan-text">
              <li>Clases 3 veces a la semana</li>
