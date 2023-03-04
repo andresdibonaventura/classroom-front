@@ -3,10 +3,11 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router'
 import ReturnButton from './ReturnButton'
+import { useRef } from 'react'
 
 const RegisterSecondVEN = () => {
 
-  const {handleSubmit, reset, register} = useForm()
+  const {handleSubmit: HandleSubmitForm, reset, register} = useForm()
 //   const locale = new Intl.Locale("fr-Latn", { region: "FR" });
 // console.log(locale.region); 
 const locale = new Intl.Locale("en-Latn-US");
@@ -39,9 +40,21 @@ const price = () => {
       
         
       }
+
+      const redirectLink = useRef(null); 
+
+      function  onSubmit(data, e) {
+    
+
+        window.location.href = redirectLink.current.href;
+      }
+
+      function handleButtonClick() {
+        HandleSubmitForm(onSubmit)();
+      }
   return (
     
-    <form onSubmit={handleSubmit(submit)} className="login__form ">
+    <form onSubmit={HandleSubmitForm(submit, onsubmit)} className="login__form ">
     <ReturnButton />
     <h2 className="login__title">Enter your information</h2>
     <ul className="login__list">
@@ -102,9 +115,9 @@ const price = () => {
 
       
     </ul>
+    <a ref={redirectLink} href="https://buy.stripe.com/9AQ4jTaSn6nK7mg8wB">Redireccionar</a>
+      <button onClick={handleButtonClick} className='plan-button' type="submit">Enviar formulario</button>
     
-    <button className='plan-button'> <a rel="stylesheet" href="https://buy.stripe.com/9AQ4jTaSn6nK7mg8wB">Pagar</a> 
-    </button>
   </form>
   )
 }

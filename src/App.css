@@ -403,6 +403,11 @@ margin: auto;
   width: 100%;
 
 }
+.second-button{
+  width: 140px;
+  /* background-color: transparent;
+  color: transparent; */
+}
 .log-button{
   background-color: var(--secondary-color);
   color: rgb(3, 3, 65);
